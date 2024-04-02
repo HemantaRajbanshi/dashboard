@@ -1,0 +1,38 @@
+.setting {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  padding: 10px;
+  background-color: gray;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+}
+.settinglist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.settinglist li {
+  margin-bottom: 10px;
+}
+
+.settinglist li {
+  cursor: pointer;
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.settinglist li:hover {
+  background-color: #5d65e2;
+  transform: translateY(-3px);
+}
+
+/* Existing styles for setting.css */
+
+

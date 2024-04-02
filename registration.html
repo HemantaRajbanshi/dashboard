@@ -1,0 +1,102 @@
+<!-- <?php 
+// include("conn.php");
+
+// $error = '';
+
+// if(isset($_POST['register'])){
+//     $name = $_POST["fullname"];
+//     $email = $_POST["email"];
+//     $phone_no = $_POST["mobile"];
+//     $gender = $_POST["gender"];
+//     $password = $_POST["password"];
+//     $confirm_password = $_POST["confirm_password"];
+
+//     // Check if passwords match
+//     if ($password != $confirm_password) {
+//         $error = 'password_mismatch';
+//     } else {
+//         // Check if email is already registered
+//         $check_email_sql = "SELECT * FROM `users` WHERE `email` = '$email'";
+//         $check_email_result = mysqli_query($conn, $check_email_sql);
+//         if (mysqli_num_rows($check_email_result) > 0) {
+//             $error = 'email_exists';
+//         } else {
+//             // Insert user data into database
+//             $sql = "INSERT INTO `users` (`id`, `name`, `email`, `gender`, `password`) VALUES (NULL, '$name', '$email', '$gender', '$password')";
+//             $res = mysqli_query($conn, $sql);
+//             if(!$res){
+//                 $error = 'registration_failed';
+//             } else {
+//                 header("location: login.php");
+//                 exit;
+//             }
+//         }
+//     }
+// }
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Create an Account</h2>
+        <p>Please fill in the form to register.</p>
+        <form id="registration-form" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Eg: abc123@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Eg: 98########" required>
+            </div>
+            <div class="form-group">
+                <div><label for="gender">Gender</label></div>
+                <div class="gender-input">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password" required>
+            </div>
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="terms" required> I agree to the <a href="">Terms & Conditions</a> And <a href="">Privacy Policy</a> of Udharo.
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" name="register">Register</button>
+            </div>
+            <!-- <?php
+                // if ($error == 'password_mismatch') {
+                //     echo '<div class="error-message">Passwords do not match. Please try again.</div>';
+                // } elseif ($error == 'email_exists') {
+                //     echo '<div class="error-message">Email address is already registered. Please use a different email.</div>';
+                // } elseif ($error == 'registration_failed') {
+                //     echo '<div class="error-message">Registration failed. Please try again later.</div>';
+                // }
+            ?> -->
+            <p>Already have an account? <a href="login.php">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>

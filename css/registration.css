@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: darkgrey;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.registration-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+}
+.registration-container h2 {
+    margin-bottom: 20px;
+    color: black;
+}
+.form-group {
+    margin-bottom: 20px;
+    padding-right: 40px;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left ;
+    color: black;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    align-items: left;
+
+}
+.form-group .gender-input {
+    margin-bottom: 10px;
+    text-align: left;
+}
+.form-group .gender-input label {
+    margin-right: 10px;
+    color: gray;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white; /* Default background color */
+}
+.form-group .gender-input input[type="radio"] {
+    display: none;
+}
+.form-group .gender-input input[type="radio"]:checked + label {
+    background-color: gray; /* Background color when clicked */
+    color: white; /* Text color when clicked */
+}
+.registration-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.form-group .checkbox-label {
+    text-align: left;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
+    display: block;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(3, 92, 201);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    border-radius: 18px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: rgb(3, 92, 201);
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+}

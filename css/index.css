@@ -1,0 +1,263 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: #727bf7;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+.logo .menu-icon {
+  color: #333;
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.logo .logo-name {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  position: relative;
+  margin-right: auto; /* Pushes the search box to the right */
+}
+
+.search-input {
+  width: 300px;
+  height: 25px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #aaa;
+  background-color: #f9f9f9; /* Slightly off-white background */
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added box-shadow for depth */
+  padding-left: 35px; /* Added padding to accommodate icon */
+  transition: 0.5s;
+}
+
+.search-input input {
+  outline: none;
+  border: none;
+}
+
+.search-input i {
+  position: absolute;
+  left: 10px; /* Adjust the position of the icon */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888; /* Adjust icon color */
+}
+.search-input input:focus{
+  font-size: 18px;
+}
+
+
+nav .anchor {
+  margin-right: 20px;
+  font-size: 18px;
+  position: relative;
+  right: -100px;
+}
+
+nav .anchor a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+nav .anchor a:hover {
+  color: #333;
+}
+
+.containerBody {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  border: 1px solid gray;
+  border-bottom: none;
+  width: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
+  padding-top: 60px;
+}
+
+.open {
+  width: 260px;
+}
+
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px 16px;
+}
+.sidebar-content .list {
+  list-style: none;
+  
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.lists .nav-link:hover {
+  background-color: #727bf7;
+}
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
+}
+.nav-link .link {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+
+#logout{
+  margin-top:250px;
+}
+
+main {
+  background: rgb(231, 223, 223);
+  padding-top: 65px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+
+/* Admin Page Section */
+.admin-page {
+  text-align: center;
+}
+
+.admin-tasks {
+  display: inline-block; /* Display as inline-block to make boxes smaller */
+  width: 45%; /* Adjusted width to make boxes smaller and fit side by side */
+  margin: 1%; /* Added margin for spacing between boxes */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-tasks:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.admin-tasks h3 {
+  font-size: 1.5em; /* Reduced font size for smaller headings */
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.admin-tasks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-tasks li {
+  margin-bottom: 10px;
+}
+
+/* Button Styling */
+.admin-tasks a {
+  display: block;
+  padding: 12px 20px;
+  background-color: #727bf7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.admin-tasks a:hover {
+  background-color: #5d65e2;
+  transform: translateY(-3px);
+}
+
+.center {
+  max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.center span {
+  letter-spacing: 5px;
+}
+.center h1 {
+  font-size: 3.5em;
+}
+.para {
+  font-family: sans-serif;
+  font-size: 25px;
+  margin: 20px;
+  letter-spacing: 2px;
+}
+
+
+/* footer */
+
+.footer{
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100vw;
+  height: 35px;
+  font-size: 18px;
+  color: white;
+  padding-top: 8px;
+  letter-spacing: 3px;
+  background-color: #333;
+  
+}

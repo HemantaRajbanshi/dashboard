@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udhaaro</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header Nav-Bar -->
+      <nav>
+        <div class="logo">
+          <i class="bx bx-menu menu-icon" onclick="toggleSidebar()"></i>
+          <span class="logo-name border"><a href="index.html">Udhaaro</a></span>
+        </div>
+
+        <div class="search-container">
+          <div class="search-box">
+            <div class="search-input">
+              <i class="bx bx-search-alt-2"></i>
+              <input type="search" placeholder="Search Party Name" />
+            </div>
+          </div>
+        </div>
+        <div class="anchor">
+          <a href="#">
+            <i class="bx bxs-calculator"></i>
+            Quick Entry</a
+          >
+          <a href="#">
+            <i class="bx bxs-calendar"></i>
+            Reminders</a
+          >
+          <a href="#" onclick="transactions()">
+            <i class="bx bx-dollar-circle"></i>
+            Transactions</span>
+        </div>
+      </nav>
+      <!-- Body Contants like Sidebar and Main Contants -->
+      <!-- Sidebar -->
+      <div class="containerBody">
+        <aside class="sidebar">
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="#" onclick="dashboard()" class="nav-link">
+                  <i class="bx bx-home-alt icon"></i>
+                  <span class="link">Dashboard</span>
+                </a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-bar-chart-alt-2 icon"></i>
+                  <span class="link">Calculator</span>
+                </a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-bell icon"></i>
+                  <span class="link">Notifications</span>
+                </a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-pie-chart-alt-2 icon"></i>
+                  <span class="link">Analytics</span>
+                </a>
+              </li>
+
+              <!-- <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-folder-open icon"></i>
+                  <span class="link">Files</span>
+                </a>
+              </li> -->
+
+              <li class="list">
+                <a href="#" onclick="settings()" class="nav-link">
+                  <i class="bx bx-cog icon"></i>
+                  <span class="link">Settings</span>
+                </a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-heart icon"></i>
+                  <span class="link">Contact Us</span>
+                </a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-message-rounded icon"></i>
+                  <span class="link">About Us</span>
+                </a>
+              </li>
+
+              <li class="list" id="logout">
+                <a href="#" class="nav-link" >
+                  <i class="bx bx-log-out icon"></i>
+                  <span class="link">Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- Admin Page Content -->
+        <main>
+          <div>
+            <h1>Udhaaro</h1>
+          </div>
+
+          <section class="center" id="maincontent">
+            <span>Enjoy!</span>
+            <h1>Our Trusted Credit Tracking System</h1>
+            <p class="para">
+              Now no worry of remembering your credits anymore. You'll get
+              notified automatically.
+            </p>
+          </section>
+        </main>
+        <div class="footer">
+          <p>&copy; Udhaaro (2024)</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/mainscript.js"></script> 
+  </body>
+</html>
