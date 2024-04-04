@@ -17,3 +17,6 @@ function dashboard() {
 function settings() {
     loadContent('setting.html');
 }
+function notification() {
+    loadContent('notification.html');
+}
