@@ -3,19 +3,22 @@ body {
     background-color: darkgrey;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; 
 }
+
 .registration-container {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 500px;
+    width: 90%; 
+    max-width: 500px; 
     text-align: center;
 }
+
 .registration-container h2 {
     margin-bottom: 20px;
     color: black;
@@ -33,34 +36,48 @@ body {
 }
 .form-group input[type="text"],
 .form-group input[type="email"],
-.form-group input[type="tel"] {
-    width: 100%;
+.form-group input[type="tel"],
+.form-group input[type="password"] {
+    width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    align-items: left;
+    margin-top: 5px;
+}
+
+.gender{
+    text-align: left;
 
 }
+
 .form-group .gender-input {
-    margin-bottom: 10px;
     text-align: left;
+    margin-bottom: 20px; 
 }
+
 .form-group .gender-input label {
+    display: inline-block;
     margin-right: 10px;
-    color: gray;
-    padding: 8px 16px;
-    border: 1px solid white;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: white; /* Default background color */
+    font-size: 14px;
+    color: black;
 }
+
 .form-group .gender-input input[type="radio"] {
     display: none;
 }
-.form-group .gender-input input[type="radio"]:checked + label {
-    background-color: gray; /* Background color when clicked */
-    color: white; /* Text color when clicked */
+
+.form-group .gender-input input[type="radio"] + label {
+    padding: 8px 16px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
+.form-group .gender-input input[type="radio"]:checked + label {
+    background-color: lightgray;
+    color: black; 
+}
+
 .registration-container {
     max-width: 400px;
     margin: 0 auto;

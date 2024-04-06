@@ -1,0 +1,91 @@
+/* Adjusted CSS for Simple Product Entry Form */
+
+/* Form Container */
+.container {
+    text-align: center;
+}
+
+/* Form */
+#product-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#product-form h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#product-form p {
+    margin-bottom: 10px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus {
+    border-color: #007bff;
+}
+
+/* Button Styling */
+.button-group button {
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Margin between buttons */
+.button-group button.add-btn,
+.button-group button.remove-btn {
+    margin-right: 10px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Proper box shadow */
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}

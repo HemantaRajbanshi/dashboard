@@ -22,7 +22,11 @@ nav {
   padding: 15px;
   
 }
-
+nav #img_logo{
+  height: 80px;
+  width: 130px;
+  position: relative;
+}
 nav .logo {
   display: flex;
   align-items: center;

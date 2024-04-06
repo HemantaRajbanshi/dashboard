@@ -1,3 +1,9 @@
+function confirmLogout() {
+    if (confirm("Are you sure you want to logout?")) {
+        window.location.href = "login.html"; // Redirect to login page
+    }
+}
+
 function loadContent (url) {
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
@@ -7,6 +13,9 @@ function loadContent (url) {
     };
     xhttp.open('GET',url);
     xhttp.send();
+}
+function quick_entry() {
+    loadContent('quick_entry.html');
 }
 function transactions() {
     loadContent('transaction.html');
@@ -19,4 +28,10 @@ function settings() {
 }
 function notification() {
     loadContent('notification.html');
+}
+function contact() {
+    loadContent('contact.html');
+}
+function about() {
+    loadContent('about.html');
 }

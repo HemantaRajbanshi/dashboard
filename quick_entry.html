@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Entry</title>
+    <link rel="stylesheet" href="css/quick_entry.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Product Entry</h2>
+        <form id="product-form">
+            <div class="form-group">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" name="product-name" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" min="0.01" step="0.01" required>
+            </div>
+            <div class="button-group">
+                <button type="button" class="remove-btn">-</button>
+                <button type="button" class="add-btn">+</button>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('product-form');
+
+            form.addEventListener('click', function(event) {
+                if (event.target.classList.contains('remove-btn')) {
+                    const formGroup = event.target.parentElement.previousElementSibling;
+                    if (formGroup) {
+                        formGroup.remove();
+                    }
+                } else if (event.target.classList.contains('add-btn')) {
+                    const formGroup = document.createElement('div');
+                    formGroup.classList.add('form-group');
+                    formGroup.innerHTML = `
+                        <label for="product-name">Product Name:</label>
+                        <input type="text" name="product-name" required>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" name="quantity" min="1" required>
+                        <label for="amount">Amount:</label>
+                        <input type="number" name="amount" min="0.01" step="0.01" required>
+                    `;
+                    form.insertBefore(formGroup, event.target.parentElement);
+                }
+            });
+        });
+    </script> -->
+</body>
+</html>

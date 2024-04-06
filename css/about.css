@@ -1,0 +1,32 @@
+/* CSS for About Us Page */
+.about-page {
+    text-align: center;
+}
+
+.about-content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 10px;
+}
+
+.about-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
