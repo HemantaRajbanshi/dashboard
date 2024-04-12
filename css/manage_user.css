@@ -1,0 +1,48 @@
+/* CSS for Manage Users Page */
+.admin-page {
+    text-align: center;
+  
+  }
+  
+  .admin-tasks {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-tasks h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .admin-tasks ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-tasks li {
+    margin-bottom: 10px;
+  }
+  
+  /* Button Styling */
+  .admin-tasks a {
+    display: block;
+    padding: 12px 20px;
+    background-color: #727bf7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .admin-tasks a:hover {
+    background-color: #5d65e2;
+    transform: translateY(-3px);
+  }
+  

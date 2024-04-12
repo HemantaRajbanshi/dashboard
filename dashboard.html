@@ -1,22 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Users</title>
+<html lang="en-UK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/dashboard.css">
-</head>
-<body>
-    <section class="admin-page">
-        <div class="admin-tasks">
-            <h3>Manage Users</h3>
-            <ul>
-                <li><a href="#">View Users</a></li>
-                <li><a href="#">Add User</a></li>
-                <li><a href="#">Edit User</a></li>
-                <li><a href="#">Delete User</a></li>
-            </ul>
-        </div>
-    </section>
-</body>
+  </head>
+  <body>
+    <!-- Content for the Dashboard -->
+    <main>
+      <div class="admin-tasks">
+        <i class="fas fa-arrow-up"></i>
+        <h3>To Receive</h3>
+        <ul>
+          <li>Total Amount: £XXXX</li>
+        </ul>
+      </div>
+      <div class="admin-tasks">
+        <i class="fas fa-arrow-down"></i>
+        <h3>Total Paid Amount</h3>
+        <ul>
+          <li>Total Amount: £XXXX</li>
+        </ul>
+      </div>
+      <div class="admin-tasks">
+        <i class="fas fa-arrow-right"></i>
+        <h3>Total Due to Receive</h3>
+        <ul>
+          <li>Total Amount: £XXXX</li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Statements Section -->
+    <div class="statement-area">
+      <h2>Statements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Username</th>
+            <th>Total Amount</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Sample data, replace with actual data -->
+          <tr>
+            <td>Product 1</td>
+            <td>Customer 1</td>
+            <td>£100</td>
+            <td>2024-04-07</td>
+          </tr>
+          <tr>
+            <td>Product 2</td>
+            <td>Customer 2</td>
+            <td>£150</td>
+            <td>2024-04-06</td>
+          </tr>
+          <tr>
+            <td>Product 3</td>
+            <td>Customer 3</td>
+            <td>£80</td>
+            <td>2024-04-05</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>
